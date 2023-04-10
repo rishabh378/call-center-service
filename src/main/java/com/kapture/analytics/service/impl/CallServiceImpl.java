@@ -1,5 +1,6 @@
 package com.kapture.analytics.service.impl;
 
+import com.kapture.analytics.entity.Call;
 import com.kapture.analytics.repository.CallRepository;
 import com.kapture.analytics.service.CallService;
 import java.util.List;

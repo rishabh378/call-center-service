@@ -2,6 +2,8 @@ package com.kapture.analytics.service;
 
 
 
+import com.kapture.analytics.entity.Call;
+
 import java.util.List;
 
 public interface CallService{

@@ -35,6 +35,7 @@ public class CallController {
     public ResponseEntity<List<Object[]>> getCallWithHighestVolume() {
         List<Object[]> callVolume = callService.getHighestCallVolumeByHour();
         return ResponseEntity.ok(callVolume);
+
     }
 
     @GetMapping("/longestCallByHour")
