@@ -8,7 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.DayOfWeek;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @RestController
@@ -31,6 +34,7 @@ public class CallController {
         return ResponseEntity.ok(callRepository.saveAll(call));
     }
 
+    // Using JPA Native Query Methods
     @GetMapping("/callWithHighestVolume")
     public ResponseEntity<List<Object[]>> getCallWithHighestVolume() {
         List<Object[]> callVolume = callService.getHighestCallVolumeByHour();
@@ -54,5 +58,38 @@ public class CallController {
     public ResponseEntity<List<Object[]>> findLongestCallByDayOfWeek() {
         List<Object[]> dayOfWeek = callService.getLongestCallByDayOfWeek();
         return ResponseEntity.ok(dayOfWeek);
+    }
+
+    // Using Java 8 Stream API
+    @GetMapping("/hourly-call-volume")
+    public Map<Integer, Long> getHourlyCallVolume() {
+        Map<Integer, Long> hourlyCallVolume = callRepository.findAll()
+                .stream()
+                .collect(Collectors.groupingBy(call -> call.getStartTime().getHour(), Collectors.counting()));
+        return hourlyCallVolume;
+    }
+
+    @GetMapping("/hourly-call-duration")
+    public Map<Integer, Double> getHourlyCallDuration() {
+        Map<Integer, Double> hourlyCallDuration = callRepository.findAll()
+                .stream()
+                .collect(Collectors.groupingBy(call -> call.getStartTime().getHour(), Collectors.averagingInt(Call::getDuration)));
+        return hourlyCallDuration;
+    }
+
+    @GetMapping("/daily-call-volume")
+    public Map<DayOfWeek, Long> getDailyCallVolume() {
+        Map<DayOfWeek, Long> dailyCallVolume = callRepository.findAll()
+                .stream()
+                .collect(Collectors.groupingBy(call -> call.getStartTime().getDayOfWeek(), Collectors.counting()));
+        return dailyCallVolume;
+    }
+
+    @GetMapping("/daily-call-duration")
+    public Map<DayOfWeek, Double> getDailyCallDuration() {
+        Map<DayOfWeek, Double> dailyCallDuration = callRepository.findAll()
+                .stream()
+                .collect(Collectors.groupingBy(call -> call.getStartTime().getDayOfWeek(), Collectors.averagingInt(Call::getDuration)));
+        return dailyCallDuration;
     }
 }
