@@ -1,7 +1,7 @@
 # call-center-service
 It is a Spring-boot project to calculate analytics from the call data saved for a callcenter.
 
-# Java 11
+# Java 8
 
 mvn clean install
 
