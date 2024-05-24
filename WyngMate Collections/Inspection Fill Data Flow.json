@@ -1,0 +1,2531 @@
+{
+  "id" : "collection-0b3347dc",
+  "name" : "Inspection Fill Data Flow",
+  "isFolder" : false,
+  "topMostLevel" : true,
+  "items" : [ {
+    "id" : "request-4c06f34d",
+    "name" : "registerDevice",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-65594743",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-428ee896",
+    "name" : "uploadImageExteriorTyresRearRight",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-246cb337",
+    "name" : "uploadImageCarDetails",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-e81384c8",
+    "name" : "uploadImageCarDetails_Insurance",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-f4b2c9e1",
+    "name" : "uploadImageCarDetails_chasis",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-7dce0404",
+    "name" : "uploadImageExteriorTyresFrontMain",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-eb9b6d8a",
+    "name" : "uploadImageExteriorTyresFrontWithHoodOpen",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-ca61db23",
+    "name" : "uploadImageExteriorTyresFrontLeftSide",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-7c855f31",
+    "name" : "uploadImageExteriorTyresRearMain",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-334fb168",
+    "name" : "create carid",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/inspection",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-11441ccf",
+    "name" : "uploadImageExteriorTyresRearBootOpened",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-81035fcc",
+    "name" : "uploadAdditionalInfoExteriorTyresLhsFrontTyre",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-91e9775c",
+    "name" : "uploadAdditionalInfoExteriorTyresLhsRearTyre",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-ca5d9202",
+    "name" : "uploadAdditionalInfoExteriorTyresRhsFrontTyre",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-7eeb3e45",
+    "name" : "uploadAdditionalInfoExteriorTyresRhsRearTyre",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-22a44ea4",
+    "name" : "uploadImageExteriorTyresLhsApron",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-019dd1c6",
+    "name" : "uploadImageExteriorTyresRhsApron",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-f35da5b3",
+    "name" : "uploadImageExteriorTyresLhsLegApron",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-af91e2d3",
+    "name" : "uploadImageExteriorTyresRhsLegApron",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-66961582",
+    "name" : "uploadImageExteriorTyresLhsPillarA",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-a504ffca",
+    "name" : "uploadImageExteriorTyresLhsPillarB",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-db03d179",
+    "name" : "uploadImageExteriorTyresLhsPillarC",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-3044f977",
+    "name" : "uploadImageExteriorTyresRhsPillarC",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-248119d3",
+    "name" : "uploadImageExteriorTyresRhsPillarB",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-0d9ff6db",
+    "name" : "uploadImageExteriorTyresRhsPillarA",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-ad52d677",
+    "name" : "uploadImageExteriorTyresUCM",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-4bfc2073",
+    "name" : "uploadImageExteriorTyresLCM",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-f6cb0a81",
+    "name" : "uploadImageExteriorTyresRadiatorSupport",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-f3797dde",
+    "name" : "uploadImageExteriorTyresBootFloor",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-bb613adb",
+    "name" : "uploadImageExteriorTyresRoof",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-6db90caf",
+    "name" : "uploadImageExteriorTyresdickyDoorBootDoor",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-2f315274",
+    "name" : "uploadImageElectricalsInteriorOdometer",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-2de863d6",
+    "name" : "uploadImageElectricalsInteriorInteriorFromBack",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-cfc3aa0f",
+    "name" : "uploadImageElectricalsInteriorInteriorFromFrontRight",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-33f05361",
+    "name" : "uploadImageElectricalsInteriorInteriorFromRearRight",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-59d97ad2",
+    "name" : "uploadAdditionalInfoEngineTransmissionSump",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-26186550",
+    "name" : "uploadAdditionalInfoEngineTransmissionExhaustSmoke",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-bcae03eb",
+    "name" : "uploadAdditionalInfoETEngineSound[0]",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-765c3e65",
+    "name" : "uploadAdditionalInfoETEngineSound[1]",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-0b57e8c5",
+    "name" : "uploadAdditionalInfoETEngineSound[2]",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/v2/image",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-2abc5e7f",
+    "name" : "CarDetailsPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/car-details/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "carDetails" : {
+            "additionalImages" : [ ],
+            "appointmentId" : {
+              "title" : "Appointment ID",
+              "value" : "{{appointmentId}}"
+            },
+            "chassisNumber" : {
+              "title" : "Chassis Number",
+              "value" : "BEEHEEWYEYJ"
+            },
+            "chassisNumberEmbossing" : {
+              "title" : "Chassis Number Embossing",
+              "value" : "Ok"
+            },
+            "city" : {
+              "id" : "2378",
+              "title" : "City",
+              "value" : "Mumbai"
+            },
+            "commercialToPrivate" : {
+              "title" : "Car Transferred from commercial to private",
+              "value" : "No"
+            },
+            "customerName" : {
+              "title" : "Customer Name",
+              "value" : "Saurabh Gupta"
+            },
+            "duplicateKey" : {
+              "title" : "Duplicate Key",
+              "value" : "No"
+            },
+            "extendedWarranty" : {
+              "title" : "Warranty/Extended Warranty Available",
+              "value" : "Yes"
+            },
+            "fitnessUpto" : {
+              "title" : "Fitness Upto",
+              "value" : "01-04-2035"
+            },
+            "fuelType" : {
+              "title" : "Fuel Type",
+              "value" : "Diesel"
+            },
+            "geoLocation" : {
+              "bearing" : 0,
+              "lat" : 28.4355949,
+              "lng" : 77.0525014
+            },
+            "inspectionAt" : {
+              "title" : "Inspection At",
+              "value" : "Store"
+            },
+            "insuranceImages" : [ ],
+            "insuranceType" : {
+              "subParts" : {
+                "insuranceExpiry" : {
+                  "title" : "Insurance Expiry Date",
+                  "value" : "20-04-2027"
+                },
+                "mismatchInInsurance" : {
+                  "title" : "Mismatch In Insurance",
+                  "value" : "No Mismatch"
+                },
+                "noClaimBonus" : {
+                  "subParts" : {
+                    "noClaimBonusPercentage" : {
+                      "title" : "No Claim Bonus Percentage",
+                      "value" : "20.00%"
+                    }
+                  },
+                  "title" : "No Claim Bonus",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Insurance Type",
+              "value" : "Zero Depreciation"
+            },
+            "isUnderHypothecation" : {
+              "title" : "Under Hypothecation",
+              "value" : "No"
+            },
+            "make" : {
+              "id" : "21",
+              "title" : "Make",
+              "value" : "MARUTI SUZUKI"
+            },
+            "model" : {
+              "id" : "338",
+              "title" : "Model",
+              "value" : "VITARA BREZZA"
+            },
+            "carColour" : {
+              "title" : "Car Colour",
+              "value" : "White"
+            },
+            "month" : {
+              "title" : "Manufacturing Month",
+              "value" : "1"
+            },
+            "ownerNumber" : {
+              "title" : "No. Of Owner",
+              "value" : "1"
+            },
+            "ownershipType" : {
+              "title" : "Ownership Type",
+              "value" : "Individual"
+            },
+            "partiPeshi" : {
+              "title" : "Partipeshi Request",
+              "value" : "No"
+            },
+            "rcAvailability" : {
+              "subParts" : {
+                "mismatchInRC" : {
+                  "title" : "Mismatch In RC",
+                  "value" : "No Mismatch"
+                },
+                "rcCondition" : {
+                  "subParts" : { },
+                  "title" : "RC Condition",
+                  "value" : "Ok"
+                }
+              },
+              "title" : "RC Availability",
+              "value" : "Original"
+            },
+            "registrationCity" : {
+              "id" : "2378",
+              "title" : "Registration City",
+              "value" : "Mumbai"
+            },
+            "registrationMonth" : {
+              "title" : "Registration Month",
+              "value" : "1"
+            },
+            "registrationNumber" : {
+              "title" : "Registration Number",
+              "value" : "HR26DP9403"
+            },
+            "registrationState" : {
+              "subParts" : {
+                "rto" : {
+                  "rtoCode" : "MH-12",
+                  "id" : "692",
+                  "title" : "RTO",
+                  "value" : "MH-12 Pune"
+                }
+              },
+              "id" : "14",
+              "title" : "Registration State",
+              "value" : "Maharashtra"
+            },
+            "registrationYear" : {
+              "title" : "Registration Year",
+              "value" : "2018"
+            },
+            "roadTaxPaid" : {
+              "title" : "Road Tax Paid",
+              "value" : "OTT/LTT"
+            },
+            "rtoNocIssued" : {
+              "title" : "RTO NOC Issued",
+              "value" : "No"
+            },
+            "storeName" : {
+              "regionId" : "27",
+              "regionName" : "Mumbai",
+              "id" : "120",
+              "title" : "Branch",
+              "value" : "location Mumbai"
+            },
+            "toBeScrapped" : {
+              "title" : "To be Scrapped",
+              "value" : "No"
+            },
+            "variant" : {
+              "transmissionType" : "AT",
+              "transportation_category" : "Category_4",
+              "variantDisplayName" : "VDI AMT [2018-2020]",
+              "variantParentId" : "4275",
+              "id" : "8380",
+              "title" : "Variant",
+              "value" : "VDI AMT"
+            },
+            "year" : {
+              "id" : "35335",
+              "title" : "Manufacturing Year",
+              "value" : "2018"
+            },
+            "comments" : {
+              "title" : "Comments",
+              "value" : [ ]
+            },
+            "errorsCount" : 0,
+            "highlightPositives" : {
+              "title" : "Highlight Positives",
+              "value" : [ ]
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 432,
+          "inspectionStartTime" : "06-07-2022 14:01:46",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:21:04",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-fc8aeccc",
+    "name" : "ExteriorTyresPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/exterior-tyres/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "exteriorTyres" : {
+            "alloyWheels" : {
+              "title" : "Alloy Wheel",
+              "value" : "Yes"
+            },
+            "apron" : {
+              "subParts" : {
+                "lhs" : {
+                  "title" : "LHS",
+                  "value" : "Yes"
+                },
+                "rhs" : {
+                  "title" : "RHS",
+                  "value" : "Yes"
+                },
+                "lhsLeg" : {
+                  "title" : "LHS LEG",
+                  "value" : "Yes"
+                },
+                "rhsLeg" : {
+                  "title" : "RHS LEG",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Apron",
+              "value" : "No"
+            },
+            "grill" : {
+              "title" : "Grill",
+              "value" : "Yes"
+            },
+            "bonnetHood" : {
+              "title" : "Bonnet/Hood",
+              "value" : "Yes"
+            },
+            "bonnetPatti" : {
+              "title" : "Upper Cross Member (Bonnet Patti)",
+              "value" : "Yes"
+            },
+            "bootFloor" : {
+              "title" : "Boot Floor",
+              "value" : "Yes"
+            },
+            "bumpers" : {
+              "subParts" : {
+                "front" : {
+                  "title" : "Front",
+                  "value" : "Yes"
+                },
+                "rear" : {
+                  "title" : "Rear",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Bumper",
+              "value" : "No"
+            },
+            "comments" : {
+              "title" : "Comments",
+              "value" : [ ]
+            },
+            "cowlTop" : {
+              "additionalInfo" : [ ],
+              "title" : "Cowl Top",
+              "value" : "Yes"
+            },
+            "dickyDoorBootDoor" : {
+              "title" : "Dicky Door / Boot Door",
+              "value" : "Yes"
+            },
+            "doors" : {
+              "subParts" : {
+                "lhsFront" : {
+                  "title" : "LHS Front",
+                  "value" : "Yes"
+                },
+                "lhsRear" : {
+                  "title" : "LHS Rear",
+                  "value" : "Yes"
+                },
+                "rhsFront" : {
+                  "title" : "RHS Front",
+                  "value" : "Yes"
+                },
+                "rhsRear" : {
+                  "title" : "RHS Rear",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Door",
+              "value" : "No"
+            },
+            "errorsCount" : 0,
+            "estimatedRFC" : {
+              "title" : "Estimated RFC",
+              "value" : 0
+            },
+            "fenders" : {
+              "subParts" : {
+                "lhs" : {
+                  "title" : "LHS",
+                  "value" : "Yes"
+                },
+                "rhs" : {
+                  "title" : "RHS",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Fender",
+              "value" : "No"
+            },
+            "firewall" : {
+              "additionalInfo" : [ ],
+              "title" : "Firewall",
+              "value" : "Yes"
+            },
+            "frontShow" : {
+              "title" : "Front Show",
+              "value" : "Yes"
+            },
+            "headLightSupport" : {
+              "additionalInfo" : [ ],
+              "title" : "Head Light Support",
+              "value" : "Yes"
+            },
+            "highlightPositives" : {
+              "title" : "Highlight Positive",
+              "value" : [ {
+                "comment" : "No Structural Damage",
+                "id" : 22,
+                "rank" : 1,
+                "type" : ""
+              }, {
+                "comment" : "Car with original paint",
+                "id" : 2,
+                "rank" : 2,
+                "type" : ""
+              }, {
+                "comment" : "4 Tyres in Excellent Condition",
+                "id" : 40,
+                "rank" : 4,
+                "type" : ""
+              }, {
+                "comment" : "Alloy Wheels",
+                "id" : 14,
+                "rank" : 7,
+                "type" : ""
+              } ]
+            },
+            "lights" : {
+              "subParts" : {
+                "lhsFogLight" : {
+                  "title" : "LHS Fog Light",
+                  "value" : "Yes"
+                },
+                "lhsHeadlight" : {
+                  "title" : "LHS Headlight",
+                  "value" : "Yes"
+                },
+                "lhsTaillight" : {
+                  "title" : "LHS Taillight",
+                  "value" : "Yes"
+                },
+                "rhsFogLight" : {
+                  "title" : "RHS Fog Light",
+                  "value" : "Yes"
+                },
+                "rhsHeadlight" : {
+                  "title" : "RHS Headlight",
+                  "value" : "Yes"
+                },
+                "rhsTaillight" : {
+                  "title" : "RHS Taillight",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Light",
+              "value" : "No"
+            },
+            "lowerCrossMember" : {
+              "title" : "Lower Cross Member",
+              "value" : "Yes"
+            },
+            "orvm" : {
+              "subParts" : {
+                "lhs" : {
+                  "title" : "LHS",
+                  "value" : "Yes"
+                },
+                "rhs" : {
+                  "title" : "RHS",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "ORVM - Manual / Electrical",
+              "value" : "No"
+            },
+            "pillars" : {
+              "subParts" : {
+                "lhsA" : {
+                  "title" : "LHS A",
+                  "value" : "Yes"
+                },
+                "lhsB" : {
+                  "title" : "LHS B",
+                  "value" : "Yes"
+                },
+                "lhsC" : {
+                  "title" : "LHS C",
+                  "value" : "Yes"
+                },
+                "rhsA" : {
+                  "title" : "RHS A",
+                  "value" : "Yes"
+                },
+                "rhsB" : {
+                  "title" : "RHS B",
+                  "value" : "Yes"
+                },
+                "rhsC" : {
+                  "title" : "RHS C",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Pillar",
+              "value" : "No"
+            },
+            "quarterPanel" : {
+              "subParts" : {
+                "lhs" : {
+                  "title" : "LHS",
+                  "value" : "Yes"
+                },
+                "rhs" : {
+                  "title" : "RHS",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Quarter Panel",
+              "value" : "No"
+            },
+            "radiatorSupport" : {
+              "title" : "Radiator Support",
+              "value" : "Yes"
+            },
+            "rating" : {
+              "title" : "Rating",
+              "value" : 1
+            },
+            "roof" : {
+              "title" : "Roof",
+              "value" : "Yes"
+            },
+            "runningBorder" : {
+              "subParts" : {
+                "lhs" : {
+                  "title" : "LHS",
+                  "value" : "Yes"
+                },
+                "rhs" : {
+                  "title" : "RHS",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Running Border",
+              "value" : "No"
+            },
+            "spareTyre" : {
+              "title" : "Spare Tyre",
+              "value" : "N/A"
+            },
+            "waterloggedVehicle" : {
+              "title" : "Is the Car Waterlogged?",
+              "value" : "No"
+            },
+            "windshield" : {
+              "subParts" : {
+                "front" : {
+                  "title" : "Front",
+                  "value" : "Yes"
+                },
+                "rear" : {
+                  "title" : "Rear",
+                  "value" : "Yes"
+                }
+              },
+              "title" : "Windshield",
+              "value" : "No"
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 372,
+          "inspectionStartTime" : "06-07-2022 14:01:46",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:20:02",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-f066b3ae",
+    "name" : "ElectricalInteriorsPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/electrical-interior/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "electricalsInterior" : {
+            "abs" : {
+              "title" : "ABS",
+              "value" : "Yes"
+            },
+            "airbagFeature" : {
+              "title" : "Airbag Feature",
+              "value" : "Yes"
+            },
+            "parkingSensor" : {
+              "title" : "Parking Sensor",
+              "value" : "Yes"
+            },
+            "electrical" : {
+              "title" : "Electrical",
+              "value" : "Yes"
+            },
+            "fabricSeats" : {
+              "title" : "Fabric Seat",
+              "value" : "Yes"
+            },
+            "fuelLevel" : {
+              "title" : "Fuel Level",
+              "value" : "Reserve"
+            },
+            "interior" : {
+              "title" : "Interior",
+              "value" : "Yes"
+            },
+            "leatherSeats" : {
+              "title" : "Leather Seat",
+              "value" : "Yes"
+            },
+            "musicSystem" : {
+              "title" : "Music System",
+              "value" : "Yes"
+            },
+            "numberOfAirbags" : {
+              "title" : "No. Of Airbags",
+              "value" : "2"
+            },
+            "odometerReading" : {
+              "title" : "Odometer(Km)",
+              "value" : "555"
+            },
+            "powerWindows" : {
+              "title" : "Power Windows",
+              "value" : "Yes"
+            },
+            "powerWindowsNumber" : {
+              "title" : "No. Of Power Windows",
+              "value" : "2"
+            },
+            "rearDefogger" : {
+              "title" : "Rear Defogger",
+              "value" : "Yes"
+            },
+            "reverseCamera" : {
+              "title" : "Reverse Camera",
+              "value" : "N/A"
+            },
+            "steeringMountedAudioControls" : {
+              "title" : "Steering Mounted Audio Control",
+              "value" : "Yes"
+            },
+            "sunroof" : {
+              "title" : "Sunroof",
+              "value" : "Yes"
+            },
+            "comments" : {
+              "title" : "Comments",
+              "value" : [ ]
+            },
+            "errorsCount" : 0,
+            "estimatedRFC" : {
+              "title" : "Estimated RFC",
+              "value" : 0
+            },
+            "highlightPositives" : {
+              "title" : "Highlight Positives",
+              "value" : [ {
+                "comment" : "Sun Roof",
+                "id" : 7,
+                "rank" : 9,
+                "type" : ""
+              }, {
+                "comment" : "Car with Safety AirBag",
+                "id" : 4,
+                "rank" : 10,
+                "type" : ""
+              } ]
+            },
+            "rating" : {
+              "title" : "Rating",
+              "value" : 1
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 171,
+          "inspectionStartTime" : "06-07-2022 14:01:46",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:16:41",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-fd4f1381",
+    "name" : "EngineTransmissionPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/engine-transmission/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "engineTransmission" : {
+            "battery" : {
+              "title" : "Battery",
+              "value" : "Yes"
+            },
+            "clutch" : {
+              "title" : "Clutch",
+              "value" : "Yes"
+            },
+            "coolant" : {
+              "title" : "Coolant",
+              "value" : "Yes"
+            },
+            "engine" : {
+              "title" : "Engine",
+              "value" : "Yes"
+            },
+            "engineMounting" : {
+              "title" : "Engine Mounting",
+              "value" : "Yes"
+            },
+            "engineOil" : {
+              "title" : "Engine Oil",
+              "value" : "Yes"
+            },
+            "engineOilLevelDipstik" : {
+              "title" : "Engine Oil Level Dipstik",
+              "value" : "Yes"
+            },
+            "engineSound" : {
+              "title" : "Engine Sound",
+              "value" : "Yes"
+            },
+            "exhaustSmoke" : {
+              "title" : "Exhaust Smoke",
+              "value" : "Yes"
+            },
+            "gearShifting" : {
+              "title" : "Gear Shifting",
+              "value" : "Yes"
+            },
+            "sump" : {
+              "title" : "Sump",
+              "value" : "Yes"
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 244,
+          "inspectionStartTime" : "06-07-2022 14:01:46",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:17:55",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-91e37f8a",
+    "name" : "SteeringSuspensionPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/steering-suspension/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "appDetails" : [ {
+            "deviceName" : "SM-A125F",
+            "inspectionStatus" : "smPending",
+            "osVer" : "11",
+            "role" : "store manager",
+            "uniqueID" : "b0539f43-0f30-4420-8dc0-12cf1b3a67f3",
+            "version" : "2.5.dev"
+          } ],
+          "steeringSuspensionBrakes" : {
+            "brakes" : {
+              "title" : "Brake",
+              "value" : "Yes"
+            },
+            "steering" : {
+              "title" : "Steering",
+              "value" : "Yes"
+            },
+            "suspension" : {
+              "title" : "Suspension",
+              "value" : "Yes"
+            },
+            "errorsCount" : 0,
+            "estimatedRFC" : {
+              "title" : "Estimated RFC",
+              "value" : 0
+            },
+            "highlightPositives" : {
+              "title" : "Highlight Positive",
+              "value" : [ ]
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 7,
+          "inspectionStartTime" : "06-07-2022 11:44:29",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:23:56",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-bd0907ed",
+    "name" : "AirConditioningPatch",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/v2/air-condition/{{carId}}",
+        "method" : "PATCH",
+        "jsonBody" : {
+          "airConditioning" : {
+            "acCooling" : {
+              "title" : "AC Cooling",
+              "value" : "Yes"
+            },
+            "climateControlAc" : {
+              "title" : "Climate Control AC",
+              "value" : "Yes"
+            },
+            "heater" : {
+              "title" : "Heater",
+              "value" : "Yes"
+            },
+            "comments" : {
+              "title" : "Comments",
+              "value" : [ ]
+            },
+            "errorsCount" : 0,
+            "estimatedRFC" : {
+              "title" : "Estimated RFC",
+              "value" : 0
+            },
+            "highlightPositives" : {
+              "title" : "Highlight Positives",
+              "value" : [ ]
+            }
+          },
+          "appointmentId" : "{{appointmentId}}",
+          "hourGlassProgress" : 34,
+          "inspectionStartTime" : "06-07-2022 11:44:29",
+          "inspectionStatus" : "smPending",
+          "role" : "store manager",
+          "sectionEndTime" : "06-07-2022 15:24:24",
+          "user" : "android@cars24.com",
+          "client" : "android"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-ea6b7ff8",
+    "name" : "registerDevice Copy",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-3d3b6cf7",
+    "name" : "registerDevice Copy",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-411840d6",
+    "name" : "create auth token Copy",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-a726b413",
+    "name" : "new",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "kjnr",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-83a44db8",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-8433e4ed",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-41a07bfa",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-be37f39d",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-7cc7f2be",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-7f4db94f",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-2f3d1598",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-334011b8",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-55374349",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-5a343ade",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/oauth",
+        "method" : "POST",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "access_token",
+          "value" : "data.access_token",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-2fd8af8c",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-3ac6978d",
+    "name" : "create auth token",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "dmxd",
+        "method" : "GET",
+        "jsonBody" : null,
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-c2b6dbae",
+    "name" : "uploadImageExteriorTyresRearRight",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  }, {
+    "id" : "request-42006deb",
+    "name" : "uploadImageExteriorTyresRearRight",
+    "isFolder" : false,
+    "topMostLevel" : false,
+    "parentId" : "collection-0b3347dc",
+    "items" : [ ],
+    "requestDetails" : {
+      "actual" : {
+        "mode" : "RAW",
+        "url" : "{{insUrl}}/register-device",
+        "method" : "POST",
+        "jsonBody" : {
+          "deviceId" : "qc-web-11"
+        },
+        "authorization" : {
+          "type" : "noauth",
+          "data" : [ {
+            "key" : "",
+            "value" : "",
+            "type" : null
+          } ]
+        },
+        "headers" : [ ],
+        "queryParams" : [ ],
+        "operations" : [ {
+          "id" : 0,
+          "key" : "username",
+          "value" : "data.detail.username",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 1,
+          "key" : "password",
+          "value" : "data.detail.password",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 2,
+          "key" : "client_id",
+          "value" : "data.detail.client_id",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        }, {
+          "id" : 3,
+          "key" : "client_secret",
+          "value" : "data.detail.client_secret",
+          "deleted" : false,
+          "type" : "SET",
+          "scope" : "ENVIRONMENT",
+          "enable" : true
+        } ]
+      },
+      "mock" : {
+        "mode" : "RAW",
+        "method" : "GET",
+        "jsonBody" : null,
+        "headers" : [ ],
+        "response" : "",
+        "operations" : [ ]
+      }
+    },
+    "collectionId" : "collection-0b3347dc"
+  } ],
+  "collectionId" : "collection-0b3347dc"
+}
